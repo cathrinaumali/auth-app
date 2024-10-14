@@ -127,7 +127,6 @@ export default function SignIn(props: { disableCustomTheme?: boolean }) {
       <CssBaseline enableColorScheme />
       <SignInContainer direction="column" justifyContent="space-between">
         <Card variant="outlined">
-          <SitemarkIcon /> 
           <Typography
             component="h1"
             variant="h4"
@@ -231,14 +230,14 @@ export default function SignIn(props: { disableCustomTheme?: boolean }) {
 
             <GoogleLogin onSuccess={responseMessage} onError={errorMessage} />
             {/* <FacebookLoginComponent /> */}
-            <Button
+            {/* <Button
               fullWidth
               variant="outlined"
               onClick={() => alert("Sign in with Facebook")}
               startIcon={<FacebookIcon />}
             >
               Sign in with Facebook
-            </Button>
+            </Button> */}
           </Box>
         </Card>
       </SignInContainer>
