@@ -1,7 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AppLayout from "./themes/AppLayout";
 import Homepage from "./pages/homepage";
 import LoginPage from "./pages/login";
 import RegisterPage from "./pages/register";
+
+import "./index.css";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +22,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <AppLayout>
+      <RouterProvider router={router} />
+    </AppLayout>
+  );
 }
 
 export default App;

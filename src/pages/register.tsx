@@ -1,6 +1,11 @@
 import RegisterComponent from "../components/Register/Register";
+import { AuthContainer } from "./styles";
 
 function Register() {
-  return <RegisterComponent />;
+  return (
+    <AuthContainer>
+      <RegisterComponent />
+    </AuthContainer>
+  );
 }
 export default Register;

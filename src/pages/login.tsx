@@ -1,6 +1,11 @@
 import LoginComponent from "../components/Login/Login";
+import { AuthContainer } from "./styles";
 
 function Login() {
-  return <LoginComponent />;
+  return (
+    <AuthContainer>
+      <LoginComponent />
+    </AuthContainer>
+  );
 }
 export default Login;
